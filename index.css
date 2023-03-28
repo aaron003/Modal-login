@@ -1,0 +1,160 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+  }
+  
+  body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url("1.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15%;
+    background-color: rgba(0, 0, 0, .3);
+    
+}
+
+.navbar li{
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+.nav-content{
+    display:flex;
+    justify-content: space-evenly;
+    gap: 3.5rem;
+    
+}
+
+.nav-content a{
+color:white;
+}
+
+.logo{
+    color: #fff;
+}
+
+.btn-login{
+  text-align: center;
+  border:none;
+  background: transparent;
+  cursor: pointer;
+  padding: 16px 32px;
+  border: 1px solid white
+}
+
+
+
+.btn-login:hover{
+  background-color: #ff4c68;
+  color: white;
+}
+
+  
+  /*MODAL CSS*/
+.modal {
+  
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 300px;
+    max-width: 80%;
+    height: 200px;
+    
+  }
+  
+  .label-user{
+    margin-top: 10px;
+    margin-bottom: 1px;
+    }
+    
+    .user{
+      margin-bottom: 10px;
+    }
+    
+    .label-pass{
+      margin-right: 4px;
+
+      margin-bottom: 10px;
+      
+    }
+    
+   .submit{
+    margin-top: 10px;
+    margin-left:115px;
+   }
+    
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+  }
+  
+  .modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .modal-body {
+    padding: 10px 10px;
+  }
+  
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+  }
+  
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .content h1{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  
+    }
+
+  .content p{
+    display: flex;
+  }
